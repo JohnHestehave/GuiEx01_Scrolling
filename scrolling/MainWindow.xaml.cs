@@ -32,8 +32,6 @@ namespace scrolling
 			line2.Text = line3.Text;
 			line3.Text = line4.Text;
 			line4.Text = line;
-			MessageBox.Show(grid.ActualWidth.ToString());
-			//MessageBox.Show("width: "+((Panel)Application.Current.MainWindow.Content).ActualWidth+" and height: "+ ((Panel)Application.Current.MainWindow.Content).ActualHeight);
 		}
 		private void scrolldown_Click(object sender, RoutedEventArgs e)
 		{
