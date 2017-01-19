@@ -1,0 +1,29 @@
+﻿<Window x:Class="scrolling.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:scrolling"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+	<Grid x:Name="grid">
+		<StackPanel Height="149" Margin="10,11,0,11" Width="23" HorizontalAlignment="Left" Grid.RowSpan="2">
+			<Label x:Name="label" Content="1" Height="23" Margin="0,0,0,15"/>
+			<Label x:Name="label_Copy" Content="2" Height="23" Margin="0,0,0,15"/>
+			<Label x:Name="label_Copy1" Content="3" Height="23" Margin="0,0,0,15"/>
+			<Label x:Name="label_Copy2" Content="4" Height="23" Margin="0,0,0,15"/>
+		</StackPanel>
+		<StackPanel Height="149" Margin="38,11,0,11" Grid.RowSpan="2" Width="139" HorizontalAlignment="Left">
+			<TextBox x:Name="line1" Height="23" TextWrapping="Wrap" Text="Hej" Margin="0,0,0,15"/>
+			<TextBox x:Name="line2" Height="23" TextWrapping="Wrap" Text="Farvel" Margin="0,0,0,15"/>
+			<TextBox x:Name="line3" Height="23" TextWrapping="Wrap" Text="Test" Margin="0,0,0,15"/>
+			<TextBox x:Name="line4" Height="23" TextWrapping="Wrap" Text="Det virker" Margin="0,0,0,15"/>
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Left" Height="149" Margin="182,12,0,10" Width="102">
+			<Button x:Name="scrollup" Content="Scroll Up" Margin="0,0,0,31" Click="scrollup_Click" Height="25"/>
+			<Button x:Name="clear" Content="Clear" Margin="0,0,0,31" Click="clear_Click" Height="25"/>
+			<Button x:Name="scrolldown" Content="Scroll Down" Margin="0,0,0,31" Click="scrolldown_Click" Height="25"/>
+		</StackPanel>
+
+	</Grid>
+</Window>
